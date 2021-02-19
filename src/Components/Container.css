@@ -1,0 +1,34 @@
+.Container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "left right answers";
+}
+
+.left-Col{
+    grid-area: left;
+}
+
+.Right-Col{
+    grid-area: right;
+}
+
+
+.submit-Section{
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+@media(max-width:640px){
+    .Container{
+        max-width: 45rem;
+    }
+    .Wrapper{
+        font-size: 80%;
+        max-width: 50rem;
+    }
+    button{
+        font-size: 65%;
+    }
+
+}
